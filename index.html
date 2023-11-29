@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Aula Bootstrap</title>
+</head>
+<body>
+
+    <header>  
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                  Bootstrap
+                </a>
+              </div>
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Links</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sobre
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#collapseOne">Missão</a></li>
+                      <li><a class="dropdown-item" href="#collapseTwo">Visão</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#collapseThree">Valores</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Pesquise</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <h1>O que é Bootstrap?</h1>
+        <p>Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples. Além disso, pode lidar com sites de desktop e páginas de dispositivos móveis da mesma forma.</p>
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://cdn.pixabay.com/photo/2023/09/04/16/31/spider-8233146_1280.jpg" class="d-block w-100" alt="aranha">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Aranha</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://cdn.pixabay.com/photo/2023/09/04/09/23/fly-8232359_1280.jpg" class="d-block w-100" alt="mosca">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Mosca</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2023/08/24/11/30/sunflower-8210479_1280.jpg" class="d-block w-100" alt="girassol">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Girassol</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              <!-- <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2023/08/24/11/30/sunflower-8210479_1280.jpg" class="d-block w-100" alt="girassol">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Fourth slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+
+
+
+        <!-- Inicio acordeon -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Missão
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Nossa missão</strong> é cocriar oportunidades de empregabilidade e geração de renda para as juventudes, por meio da formação profissional gratuita em <code>tecnologia.</code>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Visão
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong></strong> Ser a escolha natural dos nossos públicos de relacionamento, pela formação de talentose inclusão produtiva. <code></code>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Valores
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                   Somos um agente de  <strong>trasformação</strong> alicerçado em: <code>Integridade, ética, respeito, dedicação, busca do conhecimento e espirito de equipe.</code>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- final acordeon -->
+        
+    </header>
+
+    
+
+    <main>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2023/10/27/16/15/honey-bee-8345726_1280.jpg" class="card-img-top" alt="Abelha">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Abelha</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2023/10/27/17/04/dahlia-8345799_1280.jpg" class="card-img-top" alt="cogumelo">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Cogumelos</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2023/08/16/23/49/snail-8195174_1280.jpg" class="card-img-top" alt="Caracol">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Caracol</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2023/11/04/07/57/owl-8364426_1280.jpg" class="card-img-top" alt="Coruja">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Coruja</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <div class="container my-5">
+        <!-- Footer -->
+        <footer
+                class="text-center text-lg-start text-white"
+                style="background-color: #45526e"
+                >
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+              <!--Grid row-->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">
+                    Company name
+                  </h6>
+                  <p>
+                    Here you can use rows and columns to organize your footer
+                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <hr class="w-100 clearfix d-md-none" />
+      
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                  <p>
+                    <a class="text-white">MDBootstrap</a>
+                  </p>
+                  <p>
+                    <a class="text-white">MDWordPress</a>
+                  </p>
+                  <p>
+                    <a class="text-white">BrandFlow</a>
+                  </p>
+                  <p>
+                    <a class="text-white">Bootstrap Angular</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <hr class="w-100 clearfix d-md-none" />
+      
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">
+                    Useful links
+                  </h6>
+                  <p>
+                    <a class="text-white">Your Account</a>
+                  </p>
+                  <p>
+                    <a class="text-white">Become an Affiliate</a>
+                  </p>
+                  <p>
+                    <a class="text-white">Shipping Rates</a>
+                  </p>
+                  <p>
+                    <a class="text-white">Help</a>
+                  </p>
+                </div>
+      
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none" />
+      
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                  <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                  <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                  <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+      
+            <hr class="my-3">
+      
+            <!-- Section: Copyright -->
+            <section class="p-3 pt-0">
+              <div class="row d-flex align-items-center">
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8 text-center text-md-start">
+                  <!-- Copyright -->
+                  <div class="p-3">
+                    © 2020 Copyright:
+                    <a class="text-white" href="https://mdbootstrap.com/"
+                       >MDBootstrap.com</a
+                      >
+                  </div>
+                  <!-- Copyright -->
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                  <!-- Facebook -->
+                  <a
+                     class="btn btn-outline-light btn-floating m-1"
+                     class="text-white"
+                     role="button"
+                     ><i class="fab fa-facebook-f"></i
+                    ></a>
+      
+                  <!-- Twitter -->
+                  <a
+                     class="btn btn-outline-light btn-floating m-1"
+                     class="text-white"
+                     role="button"
+                     ><i class="fab fa-twitter"></i
+                    ></a>
+      
+                  <!-- Google -->
+                  <a
+                     class="btn btn-outline-light btn-floating m-1"
+                     class="text-white"
+                     role="button"
+                     ><i class="fab fa-google"></i
+                    ></a>
+      
+                  <!-- Instagram -->
+                  <a
+                     class="btn btn-outline-light btn-floating m-1"
+                     class="text-white"
+                     role="button"
+                     ><i class="fab fa-instagram"></i
+                    ></a>
+                </div>
+                <!-- Grid column -->
+              </div>
+            </section>
+            <!-- Section: Copyright -->
+          </div>
+          <!-- Grid container -->
+        </footer>
+        <!-- Footer -->
+      </div>
+      <!-- End of .container -->
+</body>
+</html>
